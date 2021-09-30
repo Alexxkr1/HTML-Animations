@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/*    font-family: 'Merriweather', serif;*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+    background-color: black;
+}
+
+.Header{
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, #2595be00, #040e1800)
+    , url("../img/disneyirl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    opacity: 70%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 88%, 68% 100%, 32% 100%, 0 84%, 0% 43%, 0 0);
+    position: relative;
+}
+
+.text-box{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: rgb(219, 219, 219);
+}
+
+.text-box h1{
+    text-transform: uppercase;
+}
+
+.heading-main{
+    display: block;
+    font-size: 5rem;
+    left: 1.5rem;
+    animation-name: left;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(30px) ;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub{
+    display: block;
+    font-size: 2rem;
+    left: 1.5rem;
+    animation-name: right;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-30px) ;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container{
+   position: absolute;
+   left: 40%;
+}
+
+.button2 {
+    width: 110px;
+    height: 55px;
+    border: 2px solid #008CBA;
+    background-color: #008CBA;
+    animation-name: down;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .button2:hover {
+    width: 110px;
+    height: 55px;
+    background-color: #008bba00;
+    border-radius: 2px solid #008CBA;  
+    color: white;
+  }
+
+  @keyframes down{
+    0%{
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateY(-30px) ;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
